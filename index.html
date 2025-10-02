@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Investigación sobre Recursividad</title>
+  <link rel="stylesheet" href="/prueba5/assets/styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Investigación sobre Recursividad</h1>
+    <p>Portada / Introducción</p>
+  </header>
+
+  <main>
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        La recursividad es una técnica fundamental en ciencias computacionales
+        que permite a una función llamarse a sí misma para resolver problemas
+        dividiéndolos en subproblemas más pequeños.
+      </p>
+    </section>
+
+    <section id="definicion">
+      <h2>Definición de Recursividad</h2>
+      <p>
+        La recursividad consiste en la propiedad de una función o algoritmo de
+        llamarse a sí mismo durante su ejecución. Permite resolver problemas
+        complejos a partir de versiones más simples del mismo problema.
+      </p>
+    </section>
+
+    <section id="procedimientos">
+      <h2>Procedimientos Recursivos y sus Aplicaciones</h2>
+      <p>
+        Los procedimientos recursivos se aplican en la búsqueda en estructuras
+        de datos, algoritmos de ordenamiento, procesamiento de gráficos y
+        resolución de problemas matemáticos como factoriales o sucesiones.
+      </p>
+    </section>
+
+    <section id="caracteristicas">
+      <h2>Características de la Recursividad</h2>
+      <ul>
+        <li>División de un problema en subproblemas.</li>
+        <li>Condición base que detiene la recursión.</li>
+        <li>Llamadas recursivas que reducen el problema.</li>
+        <li>Uso intensivo de la pila de llamadas.</li>
+      </ul>
+    </section>
+
+    <section id="complejidad">
+      <h2>Complejidad Computacional en Algoritmos Recursivos</h2>
+      <p>
+        La recursividad puede ser costosa en términos de tiempo y memoria.
+        Algoritmos como Fibonacci presentan complejidad exponencial, mientras
+        que con técnicas como la memoización se pueden optimizar a complejidad
+        lineal.
+      </p>
+    </section>
+
+    <section id="ejemplos">
+      <h2>Ejemplos de Algoritmos Recursivos</h2>
+
+      <article>
+        <h3>Factorial</h3>
+        <input type="number" id="factorialInput" placeholder="Ingresa un número">
+        <button onclick="calcularFactorial()">Calcular</button>
+        <p id="resultadoFactorial"></p>
+      </article>
+
+      <article>
+        <h3>Fibonacci</h3>
+        <input type="number" id="fibonacciInput" placeholder="Ingresa un número">
+        <button onclick="calcularFibonacci()">Calcular</button>
+        <p id="resultadoFibonacci"></p>
+      </article>
+
+      <article>
+        <h3>Torres de Hanói</h3>
+        <input type="number" id="hanoiInput" placeholder="Número de discos">
+        <button onclick="resolverHanoi()">Resolver</button>
+        <pre id="resultadoHanoi"></pre>
+      </article>
+
+      <article>
+        <h3>Fractales (Triángulo de Sierpinski)</h3>
+        <canvas id="canvasFractal" width="500" height="500"></canvas>
+        <button onclick="dibujarFractal()">Dibujar Fractal</button>
+      </article>
+    </section>
+
+    <section id="conclusion">
+      <h2>Conclusión</h2>
+      <p>
+        La recursividad es una herramienta poderosa en la programación. 
+        Permite diseñar algoritmos elegantes y efectivos, aunque debe usarse 
+        con cuidado por el costo en tiempo y memoria.
+      </p>
+    </section>
+
+    <section id="referencias">
+      <h2>Referencias (IEEE)</h2>
+      <ol>
+        <li>"Recursion (computer science)", Wikipedia, 2025.</li>
+        <li>J. H. Regehr, "Solving recurrences", Stanford CS161 lecture notes, 2016.</li>
+        <li>"Introduction to Recursion", GeeksforGeeks.</li>
+        <li>"Tower of Hanoi", Wikipedia, 2025.</li>
+        <li>"The Sierpinski Triangle - Recursive Construction of Fractals", Runestone.</li>
+        <li>J. Shams, "Recursion With Sierpinski's Triangle", Medium, 2019.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto de Investigación en Recursividad - 2025</p>
+  </footer>
+
+  <script src="/prueba5/assets/script.js"></script>
+</body>
+</html>
