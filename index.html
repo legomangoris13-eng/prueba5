@@ -16,18 +16,122 @@
     <section id="introduccion">
       <h2>Introducción</h2>
       <p>
-        La recursividad es una técnica fundamental en ciencias computacionales
-        que permite a una función llamarse a sí misma para resolver problemas
-        dividiéndolos en subproblemas más pequeños.
+       Esta página está diseñada para ayudarte a comprender cómo funciona 
+        la recursividad, cuándo utilizarla y cómo aplicarla correctamente 
+        en diferentes estructuras de datos. A través de ejemplos prácticos, 
+        visualizaciones y explicaciones claras, descubrirás cómo esta técnica 
+        puede simplificar la lógica de tus algoritmos y mejorar la comprensión 
+        de los procesos computacionales. La recursividad es uno de los conceptos 
+        más fascinantes y poderosos en el mundo de la programación. Se basa en la idea 
+        de que una función puede llamarse a sí misma para resolver un problema, 
+        dividiéndolo en subproblemas más simples hasta alcanzar una solución. 
+        Aunque puede parecer abstracta al principio, la recursividad es una herramienta 
+        esencial para abordar problemas complejos de manera clara y elegante. 
+        En el ámbito de las estructuras de datos, la recursividad juega un papel crucial. 
+        Permite recorrer árboles, explorar grafos, procesar listas enlazadas y resolver algoritmos 
+        de búsqueda y ordenamiento de forma natural. Por ejemplo, algoritmos como el recorrido 
+        en profundidad de un árbol binario o la búsqueda en profundidad en grafos 
+        se implementan de manera intuitiva utilizando funciones recursivas. 
+        Esta página web está diseñada para ofrecerte una comprensión profunda y práctica 
+        de cómo funciona la recursividad en estructuras de datos. 
+        
+        Aquí encontrarás: 
+        Explicacion teórica clara sobre qué es la recursividad y cómo se aplica. 
+        Visualizaciones interactivas que muestran cómo se desarrolla una llamada recursiva.
+
       </p>
     </section>
 
     <section id="definicion">
       <h2>Definición de Recursividad</h2>
       <p>
-        La recursividad consiste en la propiedad de una función o algoritmo de
-        llamarse a sí mismo durante su ejecución. Permite resolver problemas
-        complejos a partir de versiones más simples del mismo problema.
+       La recursividad es una técnica fundamental en ciencias computacionales
+        que permite a una función llamarse a sí misma para resolver problemas
+        dividiéndolos en subproblemas más pequeños, se refiere a la técnica de 
+        resolver un problema dividiéndolo en subproblemas más pequeños del mismo tipo, 
+        en programación, una función es recursiva cuando se llama a sí misma dentro de 
+        su propia definición, es el proceso mediante el cual una función se llama a sí 
+        misma para resolver un problema. Se basa en la idea de dividir un problema en 
+        subproblemas más pequeños del mismo tipo hasta alcanzar un caso base 
+        que no requiere más llamadas recursivas. 
+        
+        ¿Cómo se aplica la recursividad?
+        
+1. 	Identificación del caso base
+• 	Es la condición que detiene la recursión. Sin él, el programa seguiría llamándose infinitamente.
+• 	Ejemplo: En el cálculo del factorial, el caso base es .
+2. 	Reducción del problema
+• 	Cada llamada recursiva debe acercarse al caso base.
+• 	Ejemplo:  reduce el problema en cada paso.
+3. 	Llamada recursiva
+• 	La función se llama a sí misma con un argumento modificado.
+
+        <h1>Aplicaciones comunes.</h1>
+        
+        <h1>Matemática: Factorial, Fibonacci.</h1>
+        El factorial de un número entero positivo nnn, denotado como n!n!n!, 
+        se define como el producto de todos los enteros positivos desde 1 hasta nnn. 
+        Ejemplo: 
+        n!=n×(n−1)×(n−2)×⋯×1n! = n \times (n - 1) \times (n - 2) \times \dots \times 1n!=n×(n−1)×(n−2)×⋯×1 
+        Con recursividad, se puede expresar como: 
+        Caso base: 
+        0!=10! = 10!=1 
+        Caso recursivo: 
+        n!=n×(n−1)!n! = n \times (n - 1)!n!=n×(n−1)!
+
+        Algoritmos: QuickSort, MergeSort.
+        QuickSort es un algoritmo de ordenamiento basado en el enfoque de divide y vencerás. 
+        Utiliza recursividad para dividir el problema en partes más pequeñas. 
+        
+        ¿Cómo funciona? 
+        Elegir un pivote: Se selecciona un elemento de la lista como pivote. 
+        Particionar: Se reorganizan los elementos de modo que todos los menores al pivote queden a su izquierda y los mayores a su derecha. 
+        Llamadas recursivas: Se aplica QuickSort recursivamente a las sublistas izquierda y derecha.
+
+        MergeSort también sigue el paradigma de divide y vencerás, pero su enfoque es diferente: 
+        divide la lista en mitades, las ordena recursivamente y luego las fusiona. 
+        
+        ¿Cómo funciona? 
+        Dividir: Se divide la lista en dos mitades. 
+        Ordenar recursivamente: Se aplica MergeSort a cada mitad. 
+        Fusionar: Se combinan las dos mitades ordenadas en una sola lista ordenada.
+
+        Estructuras de datos: Árboles, grafos.
+        Un árbol es una estructura de datos jerárquica compuesta por nodos, donde cada nodo puede tener varios hijos, 
+        pero solo un padre (excepto la raíz).
+        
+        ¿Cómo se aplica la recursividad? 
+        La recursividad se usa para recorrer el árbol, buscar elementos, insertar nodos, calcular alturas, y más. 
+        Los recorridos más comunes (preorden, inorden, postorden) se implementan de forma recursiva.
+
+        Un grafo es una estructura compuesta por nodos (o vértices) conectados por aristas. 
+        Puede ser dirigido o no dirigido, y puede contener ciclos. 
+        
+        ¿Cómo se aplica la recursividad? 
+        La recursividad se usa principalmente en algoritmos de búsqueda como: 
+        DFS (Depth-First Search): búsqueda en profundidad. 
+        Detección de ciclos. 
+        Encontrar componentes conexas.
+
+        Juegos y lógica: Torres de Hanoi, Sudoku.
+        Torres de Hanoi 
+        Este clásico juego consiste en mover una serie de discos de una torre a otra, siguiendo tres reglas: 
+        Solo se puede mover un disco a la vez. 
+        Un disco más grande no puede colocarse sobre uno más pequeño. 
+        Solo se puede mover el disco que esté en la parte superior de una torre. 
+        
+        ¿Cómo se aplica la recursividad? 
+        La solución recursiva se basa en mover n-1 discos a una torre auxiliar, 
+        luego mover el disco más grande al destino, y finalmente mover los n-1 discos desde la torre auxiliar al destino.
+
+         Sudoku 
+        El Sudoku es un rompecabezas de lógica donde se debe llenar una cuadrícula (generalmente 9x9) 
+        con números del 1 al 9, sin repetirlos en filas, columnas ni subcuadrículas. 
+        
+        ¿Cómo se aplica la recursividad? 
+        La técnica más común para resolver Sudoku es el backtracking (algoritmo de retroceso), 
+        que es una forma de recursividad. El algoritmo intenta colocar un número en una celda vacía, 
+        verifica si es válido, y continúa con la siguiente celda. Si en algún punto no puede avanzar, retrocede y prueba otra opción.
       </p>
     </section>
 
