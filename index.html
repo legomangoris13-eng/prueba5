@@ -35,7 +35,7 @@
         Esta página web está diseñada para ofrecerte una comprensión profunda y práctica 
         de cómo funciona la recursividad en estructuras de datos. 
         
-        Aquí encontrarás: 
+        <h4>Aquí encontrarás:</h4> 
         Explicacion teórica clara sobre qué es la recursividad y cómo se aplica. 
         Visualizaciones interactivas que muestran cómo se desarrolla una llamada recursiva.
 
@@ -55,7 +55,7 @@
         subproblemas más pequeños del mismo tipo hasta alcanzar un caso base 
         que no requiere más llamadas recursivas. 
         
-        ¿Cómo se aplica la recursividad?
+        <h4>¿Cómo se aplica la recursividad?</h4>
         
 1. 	Identificación del caso base
 • 	Es la condición que detiene la recursión. Sin él, el programa seguiría llamándose infinitamente.
@@ -66,9 +66,9 @@
 3. 	Llamada recursiva
 • 	La función se llama a sí misma con un argumento modificado.
 
-        <h1>Aplicaciones comunes.</h1>
+        <h4>Aplicaciones comunes.</h4>
         
-        <h1>Matemática: Factorial, Fibonacci.</h1>
+        <h4>Matemática: Factorial, Fibonacci.</h4>
         El factorial de un número entero positivo nnn, denotado como n!n!n!, 
         se define como el producto de todos los enteros positivos desde 1 hasta nnn. 
         Ejemplo: 
@@ -79,56 +79,60 @@
         Caso recursivo: 
         n!=n×(n−1)!n! = n \times (n - 1)!n!=n×(n−1)!
 
-        Algoritmos: QuickSort, MergeSort.
-        QuickSort es un algoritmo de ordenamiento basado en el enfoque de divide y vencerás. 
+        <h4>Algoritmos: QuickSort, MergeSort.</h4>
+        <h5>QuickSort</h5> 
+        Es un algoritmo de ordenamiento basado en el enfoque de divide y vencerás. 
         Utiliza recursividad para dividir el problema en partes más pequeñas. 
         
-        ¿Cómo funciona? 
+        <h5>¿Cómo funciona?</h5> 
         Elegir un pivote: Se selecciona un elemento de la lista como pivote. 
         Particionar: Se reorganizan los elementos de modo que todos los menores al pivote queden a su izquierda y los mayores a su derecha. 
         Llamadas recursivas: Se aplica QuickSort recursivamente a las sublistas izquierda y derecha.
 
-        MergeSort también sigue el paradigma de divide y vencerás, pero su enfoque es diferente: 
+       <h5> MergeSort</h5> 
+        Sigue el paradigma de divide y vencerás, pero su enfoque es diferente: 
         divide la lista en mitades, las ordena recursivamente y luego las fusiona. 
         
-        ¿Cómo funciona? 
+        <h5>¿Cómo funciona?</h5> 
         Dividir: Se divide la lista en dos mitades. 
         Ordenar recursivamente: Se aplica MergeSort a cada mitad. 
         Fusionar: Se combinan las dos mitades ordenadas en una sola lista ordenada.
 
-        Estructuras de datos: Árboles, grafos.
-        Un árbol es una estructura de datos jerárquica compuesta por nodos, donde cada nodo puede tener varios hijos, 
+        <h4>Estructuras de datos: Árboles, grafos.</h4>
+        <h5>Arbol</h5> 
+        Es una estructura de datos jerárquica compuesta por nodos, donde cada nodo puede tener varios hijos, 
         pero solo un padre (excepto la raíz).
         
-        ¿Cómo se aplica la recursividad? 
+        <h5>¿Cómo se aplica la recursividad?</h5> 
         La recursividad se usa para recorrer el árbol, buscar elementos, insertar nodos, calcular alturas, y más. 
         Los recorridos más comunes (preorden, inorden, postorden) se implementan de forma recursiva.
 
-        Un grafo es una estructura compuesta por nodos (o vértices) conectados por aristas. 
+        <h5>Grafo<h2> 
+        Es una estructura compuesta por nodos (o vértices) conectados por aristas. 
         Puede ser dirigido o no dirigido, y puede contener ciclos. 
         
-        ¿Cómo se aplica la recursividad? 
+        <h5>¿Cómo se aplica la recursividad?</h5> 
         La recursividad se usa principalmente en algoritmos de búsqueda como: 
         DFS (Depth-First Search): búsqueda en profundidad. 
         Detección de ciclos. 
         Encontrar componentes conexas.
 
-        Juegos y lógica: Torres de Hanoi, Sudoku.
-        Torres de Hanoi 
+        <h4>Juegos y lógica: Torres de Hanoi, Sudoku.</h4>
+        <h5>Torres de Hanoi</h5> 
         Este clásico juego consiste en mover una serie de discos de una torre a otra, siguiendo tres reglas: 
         Solo se puede mover un disco a la vez. 
         Un disco más grande no puede colocarse sobre uno más pequeño. 
         Solo se puede mover el disco que esté en la parte superior de una torre. 
         
-        ¿Cómo se aplica la recursividad? 
+        <h5>¿Cómo se aplica la recursividad?</h5>
         La solución recursiva se basa en mover n-1 discos a una torre auxiliar, 
         luego mover el disco más grande al destino, y finalmente mover los n-1 discos desde la torre auxiliar al destino.
 
-         Sudoku 
+         <h5>Sudoku</h5> 
         El Sudoku es un rompecabezas de lógica donde se debe llenar una cuadrícula (generalmente 9x9) 
         con números del 1 al 9, sin repetirlos en filas, columnas ni subcuadrículas. 
         
-        ¿Cómo se aplica la recursividad? 
+        <h5>¿Cómo se aplica la recursividad?</h5> 
         La técnica más común para resolver Sudoku es el backtracking (algoritmo de retroceso), 
         que es una forma de recursividad. El algoritmo intenta colocar un número en una celda vacía, 
         verifica si es válido, y continúa con la siguiente celda. Si en algún punto no puede avanzar, retrocede y prueba otra opción.
@@ -140,18 +144,74 @@
       <p>
         Los procedimientos recursivos se aplican en la búsqueda en estructuras
         de datos, algoritmos de ordenamiento, procesamiento de gráficos y
-        resolución de problemas matemáticos como factoriales o sucesiones.
+        resolución de problemas matemáticos como factoriales o sucesiones. Es una función o subrutina 
+        que se llama a sí misma durante su ejecución para resolver un problema. 
+        Este tipo de procedimiento se utiliza cuando un problema puede dividirse en subproblemas más pequeños del mismo tipo, 
+        lo que permite aplicar la misma lógica repetidamente hasta alcanzar una solución.
+
+        <h4>Aplicaciones</h4>
+
+        <h4>Algoritmos de Ordenamiento y Búsqueda</h4>
+        <h5>Merge Sort (Ordenamiento por mezcla)</h5> 
+        Este algoritmo divide el arreglo en mitades recursivamente hasta que cada subarreglo tiene un solo elemento, 
+        y luego los combina (merge) en orden. 
+        Divide y vencerás: se divide el problema en partes más pequeñas. 
+        Recursión: se aplica el mismo proceso a cada mitad.
+
+        <h5>Quick Sort (Ordenamiento rápido)</h5> 
+        Selecciona un pivote, divide el arreglo en dos partes (menores y mayores al pivote), y aplica recursividad a cada parte. 
+        Muy eficiente en la práctica. 
+        Utiliza recursión para ordenar subconjuntos.
+
+        <h5>Búsqueda Binaria</h5> 
+        Funciona en arreglos ordenados. Divide el arreglo a la mitad y decide en qué mitad continuar la búsqueda. 
+        Eficiente: complejidad logarítmica O(log⁡n)O(\log n)O(logn). 
+        Recursiva: se llama a sí misma con un rango reducido.
       </p>
     </section>
 
     <section id="caracteristicas">
       <h2>Características de la Recursividad</h2>
-      <ul>
-        <li>División de un problema en subproblemas.</li>
-        <li>Condición base que detiene la recursión.</li>
-        <li>Llamadas recursivas que reducen el problema.</li>
-        <li>Uso intensivo de la pila de llamadas.</li>
-      </ul>
+      <p>
+        <h4>1. Caso base (o condición de parada)</h4> 
+        Es la condición que detiene la recursión. 
+        Sin un caso base, la función se llamaría infinitamente, provocando un desbordamiento de pila (stack overflow). 
+        Es esencial para garantizar que el algoritmo sea finito y correcto.
+
+        <h4>2. Llamada recursiva</h4> 
+        Es la parte donde la función se llama a sí misma con un valor modificado. 
+        Cada llamada trabaja con una versión más simple del problema original.
+
+        <h4>3. División del problema</h4> 
+        La recursividad divide el problema en subproblemas más pequeños del mismo tipo. 
+        Esto permite resolver problemas complejos de forma más sencilla y estructurada.
+
+        <h4>4. Uso de la pila (stack)</h4> 
+        Cada llamada recursiva se almacena en la pila de llamadas del sistema. 
+        Cuando se alcanza el caso base, las llamadas se resuelven en orden inverso (último en entrar, primero en salir).
+
+        <h4>5. Elegancia y simplicidad</h4> 
+        Los algoritmos recursivos suelen ser más cortos y legibles que sus equivalentes iterativos. 
+        Son especialmente útiles para estructuras de datos jerárquicas o anidadas, como árboles o grafos.
+
+        <h4>6. Costo en memoria</h4> 
+        Debido al uso de la pila, los algoritmos recursivos pueden consumir más memoria que los iterativos. 
+        En problemas grandes, esto puede llevar a errores si no se optimiza adecuadamente.
+
+        <h4>7. Tipos de recursividad</h4> 
+        Directa: la función se llama a sí misma directamente. 
+        Indirecta: una función A llama a B, y B llama a A. 
+        Mutua: varias funciones se llaman entre sí en un ciclo. 
+        Final (tail recursion): la llamada recursiva es la última instrucción de la función (algunos lenguajes la optimizan).
+
+        <h4>8. Aplicabilidad</h4> 
+        Se usa en algoritmos como: 
+        Búsqueda binaria 
+        Merge sort, quick sort 
+        Recorridos de árboles 
+        Backtracking (Sudoku, laberintos) 
+        Cálculo de factoriales, Fibonacci, etc.
+      </p>
     </section>
 
     <section id="complejidad">
@@ -160,7 +220,34 @@
         La recursividad puede ser costosa en términos de tiempo y memoria.
         Algoritmos como Fibonacci presentan complejidad exponencial, mientras
         que con técnicas como la memoización se pueden optimizar a complejidad
-        lineal.
+        lineal. La complejidad computacional mide los recursos necesarios (tiempo y espacio) 
+        que un algoritmo requiere para ejecutarse en función del tamaño de la entrada. 
+        En algoritmos recursivos, este análisis se vuelve especialmente importante porque: 
+        Cada llamada recursiva consume memoria (por la pila de llamadas). 
+        El número de llamadas puede crecer exponencialmente si no se controla. 
+        Algunas soluciones recursivas pueden ser ineficientes si no se optimizan.
+
+        <h4>¿Cómo se analiza?</h4> 
+        Se utiliza una relación de recurrencia, que describe el tiempo de ejecución en función del tamaño del problema. Luego se resuelve usando: 
+        Sustitución (reemplazar llamadas recursivas por su definición). 
+        Árbol de recursión (visualizar el costo en cada nivel). 
+        Teorema maestro (una fórmula general para resolver recurrencias comunes).
+
+         <h4>Problemas comunes en algoritmos recursivos</h4> 
+        Redundancia: llamadas repetidas con los mismos parámetros. 
+        Desbordamiento de pila: demasiadas llamadas sin llegar al caso base. 
+        Ineficiencia: cuando no se usa memorización o recursión de cola.
+
+         <h4>Teorema Maestro (resumen)</h4> 
+        Se usa para resolver recurrencias del tipo: 
+        T(n)=a⋅T(nb)+f(n)T(n) = a \cdot T\left(\frac{n}{b}\right) + f(n)T(n)=a⋅T(bn​)+f(n) 
+        Donde: 
+        aaa: número de subproblemas 
+        bbb: factor de reducción del tamaño 
+        f(n)f(n)f(n): trabajo fuera de la recursión 
+        
+        <h5>Ejemplo:</h5> 
+        Merge Sort → T(n)=2T(n/2)+O(n)T(n) = 2T(n/2) + O(n)T(n)=2T(n/2)+O(n) → O(n log n)
       </p>
     </section>
 
@@ -169,13 +256,39 @@
 
       <article>
         <h3>Factorial</h3>
+        <p>
+          El cálculo del factorial es uno de los ejemplos más simples y efectivos para introducir la recursividad. 
+          Ayuda a entender: 
+          Casos base: condición que detiene la recursión. 
+          Llamadas recursivas: cómo una función se llama a sí misma. 
+          Pila de ejecución: cada llamada se apila hasta llegar al caso base, luego se resuelven en orden inverso. 
+          Esto es clave para comprender cómo funcionan estructuras como pilas, 
+          ya que la recursión utiliza una pila interna para almacenar cada llamada.
+        </p>
         <input type="number" id="factorialInput" placeholder="Ingresa un número">
         <button onclick="calcularFactorial()">Calcular</button>
         <p id="resultadoFactorial"></p>
       </article>
+        
 
       <article>
         <h3>Fibonacci</h3>
+        <p>
+          La sucesión de Fibonacci es una serie de números en la que cada número es la suma de los dos anteriores. Comienza típicamente con 0 y 1: 
+          0, 1, 1, 2, 3, 5, 8, 13, 21, 34, …0,\ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ 34,\ \dots0, 1, 1, 2, 3, 5, 8, 13, 21, 34, … 
+          La fórmula general es: 
+          F(n)=F(n−1)+F(n−2)F(n) = F(n-1) + F(n-2)F(n)=F(n−1)+F(n−2) 
+          con los casos base: 
+          F(0)=0,F(1)=1F(0) = 0,\quad F(1) = 1F(0)=0,F(1)=1
+
+          La sucesión de Fibonacci es un ejemplo clásico para enseñar recursión. 
+          Cada llamada a la función genera dos nuevas llamadas, formando una estructura similar a un árbol binario.
+          Este enfoque es útil para entender: 
+          Casos base 
+          Llamadas recursivas 
+          Pila de ejecución 
+          Redundancia en cálculos
+        </p>
         <input type="number" id="fibonacciInput" placeholder="Ingresa un número">
         <button onclick="calcularFibonacci()">Calcular</button>
         <p id="resultadoFibonacci"></p>
@@ -183,6 +296,22 @@
 
       <article>
         <h3>Torres de Hanói</h3>
+        <p> 
+          Las Torres de Hanói son un juego matemático que consiste en tres postes y un número de discos de diferentes tamaños, 
+          colocados inicialmente en uno de los postes en orden descendente (el disco más grande abajo). 
+          <h5>Objetivo:</h5> 
+          Mover todos los discos desde el poste origen al poste destino, siguiendo estas reglas: 
+          Solo se puede mover un disco a la vez. 
+          Un disco solo puede colocarse encima de uno más grande, nunca sobre uno más pequeño. 
+          Solo se puede mover el disco que está en la parte superior de una pila. 
+          
+          <h5>¿Cómo se resuelve con recursividad?</h5> 
+          La solución recursiva se basa en dividir el problema en subproblemas más pequeños. Para mover n discos de un poste a otro, 
+          se hace lo siguiente: 
+          Mover los n-1 discos superiores al poste auxiliar. 
+          Mover el disco más grande al poste destino. 
+          Mover los n-1 discos del poste auxiliar al poste destino.
+        </p>
         <input type="number" id="hanoiInput" placeholder="Número de discos">
         <button onclick="resolverHanoi()">Resolver</button>
         <pre id="resultadoHanoi"></pre>
@@ -190,6 +319,20 @@
 
       <article>
         <h3>Fractales (Triángulo de Sierpinski)</h3>
+        <p> 
+          Los fractales son figuras geométricas que se caracterizan por tener una estructura repetitiva a diferentes escalas. 
+          Es decir, si haces zoom en una parte del fractal, verás una forma similar a la figura completa. 
+          Esta propiedad se llama autosimilitud. 
+          Un fractal puede ser finito o infinito, y muchos se generan mediante procedimientos recursivos, 
+          lo que los convierte en una herramienta ideal para enseñar y aplicar recursividad en programación. 
+          
+          <h5>¿Cómo se relacionan con la recursividad?</h5> 
+          La generación de fractales se basa en repetir un patrón una y otra vez, cada vez más pequeño. 
+          Esto se hace naturalmente con funciones recursivas que: 
+          Dibujan una figura base. 
+          Llaman a sí mismas para dibujar versiones más pequeñas de esa figura. 
+          Terminan cuando se alcanza un caso base (por ejemplo, un tamaño mínimo).
+        </p>
         <canvas id="canvasFractal" width="500" height="500"></canvas>
         <button onclick="dibujarFractal()">Dibujar Fractal</button>
       </article>
@@ -200,7 +343,22 @@
       <p>
         La recursividad es una herramienta poderosa en la programación. 
         Permite diseñar algoritmos elegantes y efectivos, aunque debe usarse 
-        con cuidado por el costo en tiempo y memoria.
+        con cuidado por el costo en tiempo y memoria. La recursividad es una herramienta fundamental 
+        en la programación y en el estudio de estructuras de datos. 
+        Su capacidad para descomponer problemas complejos en subproblemas más simples permite desarrollar soluciones elegantes, 
+        eficientes y fáciles de entender, especialmente cuando se trabaja con estructuras jerárquicas 
+        como árboles, grafos y listas enlazadas. 
+        A lo largo de esta exploración, hemos visto cómo la recursividad se aplica en algoritmos clásicos 
+        como el cálculo del factorial, la sucesión de Fibonacci, la resolución de las Torres de Hanói y la generación de fractales. 
+        Estos ejemplos no solo ilustran el poder de la recursividad, sino que también demuestran su estrecha relación 
+        con estructuras de datos como pilas, árboles y arreglos. 
+        Además, la recursividad nos permite modelar procesos naturales, resolver problemas de lógica 
+        y optimizar algoritmos mediante técnicas como la memorización y la programación dinámica. 
+        Aunque su uso requiere cuidado —especialmente para evitar errores como el desbordamiento de pila o llamadas infinitas—, 
+        su comprensión es clave para cualquier estudiante o profesional que desee dominar el pensamiento algorítmico. 
+        En resumen, la recursividad no es solo una técnica de programación: es una forma de pensar, 
+        de estructurar soluciones y de entender cómo los datos pueden organizarse y procesarse 
+        de manera eficiente. Dominarla abre las puertas a resolver problemas complejos con claridad y precisión.
       </p>
     </section>
 
